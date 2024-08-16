@@ -53,7 +53,7 @@ async function fetchProducts(
 }
 
 function generateId(company, productName) {
-  return `${company}-${Buffer.from(productName).toString("base64")}`;
+  return `${company} : ${Buffer.from(productName).toString()}`;
 }
 
 function quickSort(arr, left, right, sortKey, order) {
